@@ -14,10 +14,7 @@ struct UserDetailView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Group {
-                Image(user.picture.large)
-                    .resizable()
-                    .frame(width: 150, height: 150)
-                    .clipShape(Circle())
+                ImageView(withURL: user.picture.large, width: 150, height: 150)
             }
             .frame(width: 300, alignment: .center)
             .padding(.vertical, 20)
@@ -35,7 +32,7 @@ struct UserDetailView: View {
             definitionList(label: "町", text: user.location.city)
             Spacer()
         }
-        .navigationBarTitle(Text(verbatim: user.name.first), displayMode: .inline)
+        .navigationBarTitle(Text(verbatim: user.name.fullName), displayMode: .inline)
     }
 
     func definitionList(label:String, text:String) -> some View {

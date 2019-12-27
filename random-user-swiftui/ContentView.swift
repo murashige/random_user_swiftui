@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @ObservedObject var fetcher = UsersDataFetcher()
+    @ObservedObject var fetcher = UsersDataFetcher()
     
     var body: some View {
         NavigationView {
-            List(0 ..< usersDataMock.count) { index in
-                NavigationLink(destination: UserDetailView(user: usersDataMock[index])) {
-                    UserRowView(user: usersDataMock[index])
+            List(fetcher.usersData) { user in
+                NavigationLink(destination: UserDetailView(user: user)) {
+                    UserRowView(user: user)
                 }
             }
             .padding()

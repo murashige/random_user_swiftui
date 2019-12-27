@@ -24,10 +24,9 @@ class UsersDataFetcher: ObservableObject {
             guard let data = data else { return }
             let decoder: JSONDecoder = JSONDecoder()
             do {
-                let searchedResultData = try decoder.decode(UsersData.self, from: data)
-                dump(searchedResultData)
+                let decodeData = try decoder.decode(UsersData.self, from: data)
                 DispatchQueue.main.async {
-                    self.usersData = searchedResultData.results
+                    self.usersData = decodeData.results
                 }
             } catch {
                 print("json convert failed in JSONDecoder. " + error.localizedDescription)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2046563823B5D94C00E1F41D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046563723B5D94C00E1F41D /* ImageLoader.swift */; };
+		2046563A23B5DEEB00E1F41D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2046563923B5DEEB00E1F41D /* ImageView.swift */; };
 		205A890923B486C000232A78 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A890823B486C000232A78 /* UserDetailView.swift */; };
 		205A890B23B4A73500232A78 /* UsersDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A890A23B4A73500232A78 /* UsersDataFetcher.swift */; };
 		205A890F23B4B61C00232A78 /* UsersDataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A890E23B4B61C00232A78 /* UsersDataMock.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2046563723B5D94C00E1F41D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		2046563923B5DEEB00E1F41D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		205A890823B486C000232A78 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		205A890A23B4A73500232A78 /* UsersDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataFetcher.swift; sourceTree = "<group>"; };
 		205A890E23B4B61C00232A78 /* UsersDataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataMock.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				2097987E23B47F9C00FFCE33 /* UserRowView.swift */,
+				2046563923B5DEEB00E1F41D /* ImageView.swift */,
 				2097987C23B47C8F00FFCE33 /* UsersData.swift */,
 				2097984C23B47C4700FFCE33 /* AppDelegate.swift */,
 				2097984E23B47C4700FFCE33 /* SceneDelegate.swift */,
@@ -120,6 +125,7 @@
 				2097985A23B47C4800FFCE33 /* Info.plist */,
 				2097985423B47C4800FFCE33 /* Preview Content */,
 				205A890A23B4A73500232A78 /* UsersDataFetcher.swift */,
+				2046563723B5D94C00E1F41D /* ImageLoader.swift */,
 				205A890E23B4B61C00232A78 /* UsersDataMock.swift */,
 			);
 			path = "random-user-swiftui";
@@ -222,11 +228,9 @@
 					};
 					2097985E23B47C4800FFCE33 = {
 						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 2097984823B47C4700FFCE33;
 					};
 					2097986923B47C4900FFCE33 = {
 						CreatedOnToolsVersion = 11.3;
-						TestTargetID = 2097984823B47C4700FFCE33;
 					};
 				};
 			};
@@ -282,10 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2046563A23B5DEEB00E1F41D /* ImageView.swift in Sources */,
 				2097984D23B47C4700FFCE33 /* AppDelegate.swift in Sources */,
 				205A890923B486C000232A78 /* UserDetailView.swift in Sources */,
 				2097987F23B47F9C00FFCE33 /* UserRowView.swift in Sources */,
 				2097984F23B47C4700FFCE33 /* SceneDelegate.swift in Sources */,
+				2046563823B5D94C00E1F41D /* ImageLoader.swift in Sources */,
 				205A890B23B4A73500232A78 /* UsersDataFetcher.swift in Sources */,
 				2097987D23B47C8F00FFCE33 /* UsersData.swift in Sources */,
 				2097985123B47C4700FFCE33 /* ContentView.swift in Sources */,
@@ -494,10 +500,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43A2Y7543S;
-				INFOPLIST_FILE = "random user swiftuiTests/Info.plist";
+				INFOPLIST_FILE = "random-user-swiftuiTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -508,7 +513,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/random user swiftui.app/random user swiftui";
 			};
 			name = Debug;
 		};
@@ -516,10 +520,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43A2Y7543S;
-				INFOPLIST_FILE = "random user swiftuiTests/Info.plist";
+				INFOPLIST_FILE = "random-user-swiftuiTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,7 +533,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/random user swiftui.app/random user swiftui";
 			};
 			name = Release;
 		};
@@ -540,7 +542,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43A2Y7543S;
-				INFOPLIST_FILE = "random user swiftuiUITests/Info.plist";
+				INFOPLIST_FILE = "random-user-swiftuiUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,9 +550,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "murashige.random-user-swiftuiUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "random user swiftui";
 			};
 			name = Debug;
 		};
@@ -560,7 +562,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 43A2Y7543S;
-				INFOPLIST_FILE = "random user swiftuiUITests/Info.plist";
+				INFOPLIST_FILE = "random-user-swiftuiUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -568,9 +570,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "murashige.random-user-swiftuiUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "random user swiftui";
 			};
 			name = Release;
 		};

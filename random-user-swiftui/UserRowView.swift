@@ -13,10 +13,7 @@ struct UserRowView: View {
     
     var body: some View {
         HStack {
-            Image(user.picture.large)
-                .resizable()
-                .frame(width: 80, height: 80)
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+            ImageView(withURL: user.picture.large, width: 80, height: 80)
             Text(user.name.fullName)
                 .font(.headline)
                 .fontWeight(.semibold)

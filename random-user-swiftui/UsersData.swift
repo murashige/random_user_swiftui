@@ -27,7 +27,15 @@ struct Location: Codable {
     let city: String
 }
 
-struct UserData: Codable {
+struct Login: Codable {
+    let uuid: String
+}
+
+struct UserData: Codable, Identifiable {
+    var id: String {
+        login.uuid
+    }
+    let login: Login
     let name: Name
     let email: String
     let phone: String

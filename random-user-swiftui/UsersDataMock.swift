@@ -21,7 +21,7 @@ let usersDataStr = """
             "phone": "090-1111-1111",
             "gender": "male",
             "picture": {
-                "large": "male"
+                "large": "https://randomuser.me/api/portraits/men/89.jpg"
             },
             "location": {
                 "country": "United States",
@@ -39,7 +39,7 @@ let usersDataStr = """
             "phone": "090-1111-1111",
             "gender": "male",
             "picture": {
-                "large": "male"
+                "large": "https://randomuser.me/api/portraits/men/89.jpg"
             },
             "location": {
                 "country": "United States",
@@ -57,7 +57,7 @@ let usersDataStr = """
             "phone": "090-1111-1111",
             "gender": "male",
             "picture": {
-                "large": "male"
+                "large": "https://randomuser.me/api/portraits/men/89.jpg"
             },
             "location": {
                 "country": "United States",
