@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205A890923B486C000232A78 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A890823B486C000232A78 /* UserDetailView.swift */; };
+		205A890B23B4A73500232A78 /* UsersDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A890A23B4A73500232A78 /* UsersDataFetcher.swift */; };
+		205A890F23B4B61C00232A78 /* UsersDataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A890E23B4B61C00232A78 /* UsersDataMock.swift */; };
 		2097984D23B47C4700FFCE33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097984C23B47C4700FFCE33 /* AppDelegate.swift */; };
 		2097984F23B47C4700FFCE33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097984E23B47C4700FFCE33 /* SceneDelegate.swift */; };
 		2097985123B47C4700FFCE33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097985023B47C4700FFCE33 /* ContentView.swift */; };
@@ -15,6 +18,8 @@
 		2097985923B47C4800FFCE33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2097985723B47C4800FFCE33 /* LaunchScreen.storyboard */; };
 		2097986423B47C4900FFCE33 /* random_user_swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097986323B47C4900FFCE33 /* random_user_swiftuiTests.swift */; };
 		2097986F23B47C4900FFCE33 /* random_user_swiftuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097986E23B47C4900FFCE33 /* random_user_swiftuiUITests.swift */; };
+		2097987D23B47C8F00FFCE33 /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097987C23B47C8F00FFCE33 /* UsersData.swift */; };
+		2097987F23B47F9C00FFCE33 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2097987E23B47F9C00FFCE33 /* UserRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2097984923B47C4700FFCE33 /* random user swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "random user swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		205A890823B486C000232A78 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		205A890A23B4A73500232A78 /* UsersDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataFetcher.swift; sourceTree = "<group>"; };
+		205A890E23B4B61C00232A78 /* UsersDataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataMock.swift; sourceTree = "<group>"; };
+		2097984923B47C4700FFCE33 /* random-user-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "random-user-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2097984C23B47C4700FFCE33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2097984E23B47C4700FFCE33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2097985023B47C4700FFCE33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,12 +51,14 @@
 		2097985523B47C4800FFCE33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2097985823B47C4800FFCE33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2097985A23B47C4800FFCE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2097985F23B47C4800FFCE33 /* random user swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "random user swiftuiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2097985F23B47C4800FFCE33 /* random-user-swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "random-user-swiftuiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2097986323B47C4900FFCE33 /* random_user_swiftuiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = random_user_swiftuiTests.swift; sourceTree = "<group>"; };
 		2097986523B47C4900FFCE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2097986A23B47C4900FFCE33 /* random user swiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "random user swiftuiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2097986A23B47C4900FFCE33 /* random-user-swiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "random-user-swiftuiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2097986E23B47C4900FFCE33 /* random_user_swiftuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = random_user_swiftuiUITests.swift; sourceTree = "<group>"; };
 		2097987023B47C4900FFCE33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2097987C23B47C8F00FFCE33 /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
+		2097987E23B47F9C00FFCE33 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserRowView.swift; path = "random-user-swiftui/UserRowView.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +89,9 @@
 		2097984023B47C4700FFCE33 = {
 			isa = PBXGroup;
 			children = (
-				2097984B23B47C4700FFCE33 /* random user swiftui */,
-				2097986223B47C4900FFCE33 /* random user swiftuiTests */,
-				2097986D23B47C4900FFCE33 /* random user swiftuiUITests */,
+				2097984B23B47C4700FFCE33 /* random-user-swiftui */,
+				2097986223B47C4900FFCE33 /* random-user-swiftuiTests */,
+				2097986D23B47C4900FFCE33 /* random-user-swiftuiUITests */,
 				2097984A23B47C4700FFCE33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,25 +99,30 @@
 		2097984A23B47C4700FFCE33 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2097984923B47C4700FFCE33 /* random user swiftui.app */,
-				2097985F23B47C4800FFCE33 /* random user swiftuiTests.xctest */,
-				2097986A23B47C4900FFCE33 /* random user swiftuiUITests.xctest */,
+				2097984923B47C4700FFCE33 /* random-user-swiftui.app */,
+				2097985F23B47C4800FFCE33 /* random-user-swiftuiTests.xctest */,
+				2097986A23B47C4900FFCE33 /* random-user-swiftuiUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2097984B23B47C4700FFCE33 /* random user swiftui */ = {
+		2097984B23B47C4700FFCE33 /* random-user-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				2097987E23B47F9C00FFCE33 /* UserRowView.swift */,
+				2097987C23B47C8F00FFCE33 /* UsersData.swift */,
 				2097984C23B47C4700FFCE33 /* AppDelegate.swift */,
 				2097984E23B47C4700FFCE33 /* SceneDelegate.swift */,
 				2097985023B47C4700FFCE33 /* ContentView.swift */,
+				205A890823B486C000232A78 /* UserDetailView.swift */,
 				2097985223B47C4800FFCE33 /* Assets.xcassets */,
 				2097985723B47C4800FFCE33 /* LaunchScreen.storyboard */,
 				2097985A23B47C4800FFCE33 /* Info.plist */,
 				2097985423B47C4800FFCE33 /* Preview Content */,
+				205A890A23B4A73500232A78 /* UsersDataFetcher.swift */,
+				205A890E23B4B61C00232A78 /* UsersDataMock.swift */,
 			);
-			path = "random user swiftui";
+			path = "random-user-swiftui";
 			sourceTree = "<group>";
 		};
 		2097985423B47C4800FFCE33 /* Preview Content */ = {
@@ -118,30 +133,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2097986223B47C4900FFCE33 /* random user swiftuiTests */ = {
+		2097986223B47C4900FFCE33 /* random-user-swiftuiTests */ = {
 			isa = PBXGroup;
 			children = (
 				2097986323B47C4900FFCE33 /* random_user_swiftuiTests.swift */,
 				2097986523B47C4900FFCE33 /* Info.plist */,
 			);
-			path = "random user swiftuiTests";
+			path = "random-user-swiftuiTests";
 			sourceTree = "<group>";
 		};
-		2097986D23B47C4900FFCE33 /* random user swiftuiUITests */ = {
+		2097986D23B47C4900FFCE33 /* random-user-swiftuiUITests */ = {
 			isa = PBXGroup;
 			children = (
 				2097986E23B47C4900FFCE33 /* random_user_swiftuiUITests.swift */,
 				2097987023B47C4900FFCE33 /* Info.plist */,
 			);
-			path = "random user swiftuiUITests";
+			path = "random-user-swiftuiUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2097984823B47C4700FFCE33 /* random user swiftui */ = {
+		2097984823B47C4700FFCE33 /* random-user-swiftui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2097987323B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random user swiftui" */;
+			buildConfigurationList = 2097987323B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random-user-swiftui" */;
 			buildPhases = (
 				2097984523B47C4700FFCE33 /* Sources */,
 				2097984623B47C4700FFCE33 /* Frameworks */,
@@ -151,14 +166,14 @@
 			);
 			dependencies = (
 			);
-			name = "random user swiftui";
+			name = "random-user-swiftui";
 			productName = "random user swiftui";
-			productReference = 2097984923B47C4700FFCE33 /* random user swiftui.app */;
+			productReference = 2097984923B47C4700FFCE33 /* random-user-swiftui.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2097985E23B47C4800FFCE33 /* random user swiftuiTests */ = {
+		2097985E23B47C4800FFCE33 /* random-user-swiftuiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2097987623B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random user swiftuiTests" */;
+			buildConfigurationList = 2097987623B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random-user-swiftuiTests" */;
 			buildPhases = (
 				2097985B23B47C4800FFCE33 /* Sources */,
 				2097985C23B47C4800FFCE33 /* Frameworks */,
@@ -169,14 +184,14 @@
 			dependencies = (
 				2097986123B47C4900FFCE33 /* PBXTargetDependency */,
 			);
-			name = "random user swiftuiTests";
+			name = "random-user-swiftuiTests";
 			productName = "random user swiftuiTests";
-			productReference = 2097985F23B47C4800FFCE33 /* random user swiftuiTests.xctest */;
+			productReference = 2097985F23B47C4800FFCE33 /* random-user-swiftuiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2097986923B47C4900FFCE33 /* random user swiftuiUITests */ = {
+		2097986923B47C4900FFCE33 /* random-user-swiftuiUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2097987923B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random user swiftuiUITests" */;
+			buildConfigurationList = 2097987923B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random-user-swiftuiUITests" */;
 			buildPhases = (
 				2097986623B47C4900FFCE33 /* Sources */,
 				2097986723B47C4900FFCE33 /* Frameworks */,
@@ -187,9 +202,9 @@
 			dependencies = (
 				2097986C23B47C4900FFCE33 /* PBXTargetDependency */,
 			);
-			name = "random user swiftuiUITests";
+			name = "random-user-swiftuiUITests";
 			productName = "random user swiftuiUITests";
-			productReference = 2097986A23B47C4900FFCE33 /* random user swiftuiUITests.xctest */;
+			productReference = 2097986A23B47C4900FFCE33 /* random-user-swiftuiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +230,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2097984423B47C4700FFCE33 /* Build configuration list for PBXProject "random user swiftui" */;
+			buildConfigurationList = 2097984423B47C4700FFCE33 /* Build configuration list for PBXProject "random-user-swiftui" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,9 +243,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2097984823B47C4700FFCE33 /* random user swiftui */,
-				2097985E23B47C4800FFCE33 /* random user swiftuiTests */,
-				2097986923B47C4900FFCE33 /* random user swiftuiUITests */,
+				2097984823B47C4700FFCE33 /* random-user-swiftui */,
+				2097985E23B47C4800FFCE33 /* random-user-swiftuiTests */,
+				2097986923B47C4900FFCE33 /* random-user-swiftuiUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,8 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2097984D23B47C4700FFCE33 /* AppDelegate.swift in Sources */,
+				205A890923B486C000232A78 /* UserDetailView.swift in Sources */,
+				2097987F23B47F9C00FFCE33 /* UserRowView.swift in Sources */,
 				2097984F23B47C4700FFCE33 /* SceneDelegate.swift in Sources */,
+				205A890B23B4A73500232A78 /* UsersDataFetcher.swift in Sources */,
+				2097987D23B47C8F00FFCE33 /* UsersData.swift in Sources */,
 				2097985123B47C4700FFCE33 /* ContentView.swift in Sources */,
+				205A890F23B4B61C00232A78 /* UsersDataMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +314,12 @@
 /* Begin PBXTargetDependency section */
 		2097986123B47C4900FFCE33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2097984823B47C4700FFCE33 /* random user swiftui */;
+			target = 2097984823B47C4700FFCE33 /* random-user-swiftui */;
 			targetProxy = 2097986023B47C4900FFCE33 /* PBXContainerItemProxy */;
 		};
 		2097986C23B47C4900FFCE33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2097984823B47C4700FFCE33 /* random user swiftui */;
+			target = 2097984823B47C4700FFCE33 /* random-user-swiftui */;
 			targetProxy = 2097986B23B47C4900FFCE33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -435,10 +455,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"random user swiftui/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "random-user-swiftui/Assets.xcassets";
 				DEVELOPMENT_TEAM = 43A2Y7543S;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "random user swiftui/Info.plist";
+				INFOPLIST_FILE = "random-user-swiftui/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,10 +475,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"random user swiftui/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "random-user-swiftui/Assets.xcassets";
 				DEVELOPMENT_TEAM = 43A2Y7543S;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "random user swiftui/Info.plist";
+				INFOPLIST_FILE = "random-user-swiftui/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,7 +577,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2097984423B47C4700FFCE33 /* Build configuration list for PBXProject "random user swiftui" */ = {
+		2097984423B47C4700FFCE33 /* Build configuration list for PBXProject "random-user-swiftui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2097987123B47C4900FFCE33 /* Debug */,
@@ -566,7 +586,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2097987323B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random user swiftui" */ = {
+		2097987323B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random-user-swiftui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2097987423B47C4900FFCE33 /* Debug */,
@@ -575,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2097987623B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random user swiftuiTests" */ = {
+		2097987623B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random-user-swiftuiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2097987723B47C4900FFCE33 /* Debug */,
@@ -584,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2097987923B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random user swiftuiUITests" */ = {
+		2097987923B47C4900FFCE33 /* Build configuration list for PBXNativeTarget "random-user-swiftuiUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2097987A23B47C4900FFCE33 /* Debug */,
