@@ -13,51 +13,52 @@ struct ContentView: View {
     @State var selectedGender = ""
     
     var body: some View {
-        VStack {
-            Picker(selection: $selectedGender, label: Text("性別で絞り込む")) {
-                Text("すべて").tag("")
-                Text("男性").tag("male")
-                Text("女性").tag("female")
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .onTapGesture {
-                self.fetcher.updateGender(gender: self.selectedGender)
-            }
-            
-            if(fetcher.isLoading) {
-                VStack {
-                    Spacer()
-                    ActivityIndicator(isAnimating: $fetcher.isLoading, style: .medium)
-                    Spacer()
+        NavigationView {
+            VStack {
+                Picker(selection: $selectedGender, label: Text("性別で絞り込む")) {
+                    Text("すべて").tag("")
+                    Text("男性").tag("male")
+                    Text("女性").tag("female")
                 }
-            } else {
-                NavigationView {
+                .pickerStyle(SegmentedPickerStyle())
+                .onTapGesture {
+                    self.fetcher.updateGender(gender: self.selectedGender)
+                }
+                
+                if(fetcher.isLoading) {
+                    VStack {
+                        Spacer()
+                        ActivityIndicator(isAnimating: $fetcher.isLoading, style: .medium)
+                        Spacer()
+                    }
+                } else {
                     List(fetcher.usersData) { user in
                         NavigationLink(destination: UserDetailView(user: user)) {
                             UserRowView(user: user)
                         }
                     }
                     .padding()
-                    .navigationBarTitle(Text("ユーザーリスト"))
-                }
-                
-                Button(action: {
-                   self.fetcher.fetchNextPage(gender: self.selectedGender)
-                }) {
-                    if(fetcher.isLoadingNextPage) {
-                        ActivityIndicator(isAnimating: $fetcher.isLoadingNextPage, style: .medium)
-                    } else {
-                        Text("さらにユーザーを表示")
-                           .font(.headline)
+                        
+                    
+                    Button(action: {
+                       self.fetcher.fetchNextPage(gender: self.selectedGender)
+                    }) {
+                        if(fetcher.isLoadingNextPage) {
+                            ActivityIndicator(isAnimating: $fetcher.isLoadingNextPage, style: .medium)
+                        } else {
+                            Text("さらにユーザーを表示")
+                               .font(.headline)
+                        }
                     }
+                    .frame(width: 280, height: 40, alignment: .center)
+                    .foregroundColor(Color.gray)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.gray, lineWidth: 3)
+                    )
                 }
-                .frame(width: 280, height: 40, alignment: .center)
-                .foregroundColor(Color.gray)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.gray, lineWidth: 3)
-                )
             }
+            .navigationBarTitle(Text("ユーザーリスト"), displayMode: .inline)
         }
     }
 }
